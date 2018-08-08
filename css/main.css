@@ -1935,7 +1935,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #7a29ff;
+  background: #ba499a;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2786,12 +2786,12 @@ img:hover {
 .content-wrap {
   float: right;
   box-sizing: border-box;
-  padding: 40px;
+  padding: 20px;
   width: 700px;
-  background: #fff;
+  background: rgba(255,255,255,0.6) none repeat scroll !important;
   min-height: 700px;
   box-shadow: initial;
-  border-radius: initial;
+  border-radius: 20px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .content-wrap {
