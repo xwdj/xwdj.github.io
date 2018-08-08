@@ -400,29 +400,30 @@ document.write('<script src="' + src + '" id="sozz"><\/script>');
 
       
 	  
-	<div id="player1" class="aplayer">
-	<script src="/js/src/APlayer.min.js"></script>
+	<link rel="stylesheet" href="/dist/APlayer.min.css">
+	<div id="player1" class="aplayer"></div>
+	<script src="/dist/APlayer.min.js"></script>
 	<script type="text/javascript">
-	var ap = new APlayer({
-    element: document.getElementById('player1'),                       // 可选的, 播放器元素
+	const ap = new APlayer({
+    container: document.getElementById('player1'),                       // 可选的, 播放器元素
     narrow: false,                                                     // 可选的, 风格
     autoplay: true,                                                    // 可选的, 自动播放歌曲，不支持移动浏览器
-    showlrc: 0,                                                        // 可选的, 显示歌词, 可以是0, 1, 2, see: ###With lrc
-    mutex: true,                                                       // 可选的, 当这个播放器播放时暂停其他播放器
-    theme: '#e6d0b2',                                                  // 可选的, 主题颜色, 默认: #b7daff
-    mode: 'random',                                                    // 可选的, 播放模式, 可以 `random` `single` ``(loop) `order`(no loop), default: `circulation`
-    preload: 'metadata',                                               // 可选的, 加载音乐的方式, can be 'none' 'metadata' 'auto', default: 'auto'
-    listmaxheight: '100px',                                             // 可选的, 播放列表的最大高度
-    music: {                                                           //必须的, music info, see: ###With playlist
-        title: 'Preparation',                                          // 必须的, music title
-        author: 'Hans Zimmer/Richard Harvey',                          // 必须的, music author
+    //showlrc: 0,                                                        // 可选的, 显示歌词, 可以是0, 1, 2, see: ###With lrc
+    //mutex: true,                                                       // 可选的, 当这个播放器播放时暂停其他播放器
+    //theme: '#e6d0b2',                                                  // 可选的, 主题颜色, 默认: #b7daff
+    //mode: 'random',                                                    // 可选的, 播放模式, 可以 `random` `single` ``(loop) `order`(no loop), default: `circulation`
+    //preload: 'metadata',                                               // 可选的, 加载音乐的方式, can be 'none' 'metadata' 'auto', default: 'auto'
+    //listmaxheight: '100px',                                             // 可选的, 播放列表的最大高度
+    audio: {                                                           //必须的, music info, see: ###With playlist
+        name: 'Preparation',                                          // 必须的, music title
+        artist: 'Hans Zimmer/Richard Harvey',                          // 必须的, music author
         url: 'http://ou68gv0zg.bkt.clouddn.com/Ray%20-%20%E6%A5%BD%E5%9C%92PROJECT.mp3',  // 必须的, music url
-        pic: 'http://ou68gv0zg.bkt.clouddn.com/%E9%AC%BC%E6%9D%9F%E5%8D%83%E5%AF%BB%20-%20%E6%9C%88%E5%85%89.jpg',  // 可选的, music picture
+        cover: 'http://ou68gv0zg.bkt.clouddn.com/%E9%AC%BC%E6%9D%9F%E5%8D%83%E5%AF%BB%20-%20%E6%9C%88%E5%85%89.jpg',  // 可选的, music picture
         lrc: '[00:00.00]lrc here\n[00:01.00]aplayer'                   // 可选的, lrc, see: ###With lrc
            }
 	});
 	</script>
-	</div>
+	
     </div>
   </aside>
 
