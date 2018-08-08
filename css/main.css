@@ -1940,7 +1940,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #366138;
+  background: #08ff9a;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2977,7 +2977,7 @@ img:hover {
   color: #555;
   background: rgba(255,255,255,0.8) none repeat scroll !important;
   box-shadow: initial;
-  border-radius: initial;
+  border-radius: 20px;
   opacity: 0;
 }
 .sidebar-inner.affix {
