@@ -1935,7 +1935,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffdbc8;
+  background: #85ff24;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2992,38 +2992,6 @@ img:hover {
 .use-motion .sidebar .motion-element {
   opacity: 1;
 }
-.aplayer-list ol li:hover {
-/*列表悬停颜色*/
-  background: rgba(0,0,0,0.6) none repeat scroll !important;
-}
-.aplayer-list ol li {
-/*列表底色*/
-  background: rgba(0,0,0,0.7);
-}
-.aplayer-list-light {
-/*列表播放歌曲颜色*/
-  background: rgba(255,255,255,0.8) none repeat scroll !important;
-}
-#player1 {
-/*边框样式*/
-  border-radius: 6px;
-}
-#player1 div,
-#player1 ol {
-  border-radius: 6px;
-}
-#player1 * {
-  color: #fff;
-}
-.aplayer-list-index {
-  float: left;
-}
-.aplayer-list-title {
-  float: left;
-}
-.aplayer-list-author {
-  float: right;
-}
 .sidebar {
   margin-left: -100%;
   right: auto;
@@ -3173,4 +3141,43 @@ img:hover {
   padding: 25px;
   -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
   -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
+}
+.aplayer .aplayer-list ol li:hover {
+  background: #efefef;
+}
+.aplayer .aplayer-list ol li {
+  position: relative;
+  height: 32px;
+  line-height: 32px;
+  padding: 0 15px;
+  font-size: 12px;
+  border-top: 1px solid #e9e9e9;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  overflow: hidden;
+  margin: 0;
+}
+.aplayer .aplayer-list ol li.aplayer-list-light {
+  background: #e9e9e9;
+}
+#player1 {
+/*边框样式*/
+  border-radius: 6px;
+}
+#player1 div,
+#player1 ol {
+  border-radius: 6px;
+}
+#player1 * {
+  color: #fff;
+}
+.aplayer-list-index {
+  color: #666;
+  margin-right: 12px;
+  cursor: pointer;
+}
+.aplayer-list-author {
+  color: #666;
+  float: right;
+  cursor: pointer;
 }
